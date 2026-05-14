@@ -412,6 +412,7 @@
     .prog-fill { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
     /* Ensure score badges print with colour */
     .score-btn.on { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+    .score-badge { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
     .card { box-shadow:none; border:1px solid #EEF1F5; break-inside:avoid; }
   }
 
@@ -1273,7 +1274,7 @@ function step5(){
       ac.forEach((_,idx)=>{
         const v=S.scores[`${f.id}_${idx}`];
         const g=v!==undefined?SCORE_GUIDE.find(x=>x.value===v):null;
-        const badge=el('span',{style:{fontSize:'9px',fontWeight:'700',padding:'2px 6px',borderRadius:'4px',background:g?g.color:B.lightGray,color:g?g.text:B.midGray,textAlign:'center',display:'block'}},v===undefined?'—':scoreLabel(v));
+        const badge=el('span',{class:'score-badge',style:{fontSize:'9px',fontWeight:'700',padding:'2px 6px',borderRadius:'4px',background:g?g.color:B.lightGray,color:g?g.text:B.midGray,textAlign:'center',display:'block'}},v===undefined?'—':scoreLabel(v));
         fg.appendChild(badge);
       });
       fr.appendChild(fg);
