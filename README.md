@@ -13,7 +13,8 @@ A standalone HTML page hosted via GitHub Pages. No frameworks, no dependencies b
 ## Hosting
 
 This page is published via GitHub Pages. To view it live, visit:  
-`https://[your-github-username].github.io/[repo-name]/`
+https://github.com/TheOpsShop-SB/resources/tree/main
+
 
 ## Contact
 
